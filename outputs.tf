@@ -8,5 +8,5 @@ output "fw_management_ips_azure" {
 
 # output "fw_management_ips_gcp" {
 #   value = nonsensitive(module.transit_adoption_framework.firenet["gcp_transit_firenet"].aviatrix_firewall_instance.*.public_ip)
-}
+#}
 
