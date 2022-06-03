@@ -9,7 +9,7 @@ module "transit_adoption_framework" {
 
   default_firenet_firewall_image = {
     azure = "Fortinet FortiGate (PAYG_20190624) Next-Generation Firewall Latest Release",
-    gcp   = "Fortinet FortiGate Next-Generation Firewall",
+    gcp   = "Palo Alto Networks VM-Series Next-Generation Firewall BUNDLE1",
   }
 
   peering_mode = "custom"
