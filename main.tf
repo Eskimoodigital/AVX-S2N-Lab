@@ -15,16 +15,16 @@ module "transit_adoption_framework" {
   peering_mode = "custom"
   peering_map = {
     mtt_peering : {
-      gw1_name = module.transit_adoption_framework.transit_firenet["mtt_azure"].transit_gateway.gw_name,
-      gw2_name = module.transit_adoption_framework.transit_firenet["mtt_gcp"].transit_gateway.gw_name,
+      gw1_name = module.transit_adoption_framework.transit["mtt_azure"].transit_gateway.gw_name,
+      gw2_name = module.transit_adoption_framework.transit["mtt_gcp"].transit_gateway.gw_name,
     },
     azure_peering : {
-      gw1_name = module.transit_adoption_framework.transit_firenet["mtt_azure"].transit_gateway.gw_name,
+      gw1_name = module.transit_adoption_framework.transit["mtt_azure"].transit_gateway.gw_name,
       gw2_name = module.transit_adoption_framework.transit_firenet["azure_transit_firenet"].transit_gateway.gw_name,
     },
     gcp_peering : {
-      gw1_name = module.transit_adoption_framework.transit_firenet["mtt_gcp"].transit_gateway.gw_name,
-      gw2_name = module.transit_adoption_framework.transit_firenet["gcp_transit_firenet"].transit_gateway.gw_name,
+      gw1_name = module.transit_adoption_framework.transit["mtt_gcp"].transit_gateway.gw_name,
+      gw2_name = module.transit_adoption_framework.transit["gcp_transit_firenet"].transit_gateway.gw_name,
     },
   }
 
