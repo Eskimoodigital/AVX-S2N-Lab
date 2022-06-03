@@ -30,7 +30,7 @@ module "transit_adoption_framework" {
 
   transit_firenet = {
     mtt_azure = {
-      transit_name                      = "azure-mtt"
+      transit_name                      = "azure_mtt"
       transit_cloud                     = "azure",
       transit_cidr                      = "10.201.0.0/16",
       transit_region_name               = var.azure_region,
@@ -38,7 +38,7 @@ module "transit_adoption_framework" {
       transit_enable_multi_tier_transit = true
     },
     mtt_gcp = {
-      transit_name                      = "gcp-mtt"
+      transit_name                      = "gcp_mtt"
       transit_cloud                     = "gcp",
       transit_cidr                      = "10.202.0.0/16",
       transit_region_name               = var.gcp_region,
