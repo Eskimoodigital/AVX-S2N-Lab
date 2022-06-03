@@ -112,5 +112,5 @@ variable "gcp_account" {
     password = random_password.password.result
     }
   )
-}
+
 
