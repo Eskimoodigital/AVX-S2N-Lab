@@ -10,11 +10,11 @@ variable "gcp_region" {
 
 variable "azure_account" {
   type    = string
-  default = "Azure"
+  default = "Azure_Paul_Carvill"
 }
 
 variable "gcp_account" {
-  default = "Google"
+  default = "GCP_Paul"
 }
 
 # locals {
