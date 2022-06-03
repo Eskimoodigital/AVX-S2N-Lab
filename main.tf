@@ -20,7 +20,7 @@ module "transit_adoption_framework" {
     },
     azure_peering : {
       gw1_name = module.transit_adoption_framework.transit["mtt_azure"].transit_gateway.gw_name,
-      gw2_name = module.transit_adoption_framework.transit_firenet["azure_transit_firenet"].transit_gateway.gw_name,
+      gw2_name = module.transit_adoption_framework.transit["azure_transit_firenet"].transit_gateway.gw_name,
     },
     gcp_peering : {
       gw1_name = module.transit_adoption_framework.transit["mtt_gcp"].transit_gateway.gw_name,
