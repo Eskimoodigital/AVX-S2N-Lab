@@ -1,6 +1,6 @@
 provider "aviatrix" {
-  controller_ip           = data.terraform_remote_state.management_deployment.outputs.controller_public_ip
-  username                = data.terraform_remote_state.management_deployment.outputs.admin_user
-  password                = data.terraform_remote_state.management_deployment.outputs.admin_password
+  controller_ip           = "18.198.44.55"
+  username                = "admin"
+  password                = "Ccie16661!"
   skip_version_validation = false
 }
