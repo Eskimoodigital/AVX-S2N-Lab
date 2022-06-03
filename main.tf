@@ -76,7 +76,7 @@ resource "random_password" "password" {
 
 module "spokes" {
   source  = "terraform-aviatrix-modules/mc-spoke/aviatrix"
-  version = "1.1.2"
+  version = "1.2.1"
 
   for_each = local.spokes
 
