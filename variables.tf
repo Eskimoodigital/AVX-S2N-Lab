@@ -64,7 +64,7 @@ variable "gcp_account" {
       cidr       = "10.2.0.0/16",
       region     = var.azure_region,
       account    = var.azure_account,
-      transit_gw = module.transit_adoption_framework.transit["azure_mtt"].transit_gateway.gw_name,
+      transit_gw = module.transit_adoption_framework.transit["mtt_azure"].transit_gateway.gw_name,
     },
     gcp_spoke_3 = {
       cloud      = "GCP",
@@ -72,7 +72,7 @@ variable "gcp_account" {
       cidr       = "10.6.0.0/16",
       region     = var.gcp_region,
       account    = var.gcp_account,
-      transit_gw = module.transit_adoption_framework.transit["gcp_mtt"].transit_gateway.gw_name,
+      transit_gw = module.transit_adoption_framework.transit["mtt_gcp"].transit_gateway.gw_name,
     },
     azure_spoke_4 = {
       cloud      = "Azure",
@@ -80,7 +80,7 @@ variable "gcp_account" {
       cidr       = "10.3.0.0/16",
       region     = var.azure_region,
       account    = var.azure_account,
-      transit_gw = module.transit_adoption_framework.transit["azure_mtt"].transit_gateway.gw_name,
+      transit_gw = module.transit_adoption_framework.transit["mtt_azure"].transit_gateway.gw_name,
     },
     gcp_spoke_4 = {
       cloud      = "GCP",
@@ -88,7 +88,7 @@ variable "gcp_account" {
       cidr       = "10.7.0.0/16",
       region     = var.gcp_region,
       account    = var.gcp_account,
-      transit_gw = module.transit_adoption_framework.transit["gcp_mtt"].transit_gateway.gw_name,
+      transit_gw = module.transit_adoption_framework.transit["mtt_azure"].transit_gateway.gw_name,
     },
   }
 
