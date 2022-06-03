@@ -17,7 +17,7 @@ variable "gcp_account" {
   default = "GCP_Paul"
 }
 
-# locals {
+ locals {
 #   azure_account = data.terraform_remote_state.management_deployment.outputs.account_name
 #   gcp_account   = data.terraform_remote_state.management_deployment.outputs.gcp_account_name
 #   vnet_id       = data.terraform_remote_state.management_deployment.outputs.vnet_id
@@ -112,5 +112,6 @@ variable "gcp_account" {
     password = random_password.password.result
     }
   )
-
+ }
+ 
 
