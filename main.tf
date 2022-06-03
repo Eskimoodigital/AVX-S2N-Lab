@@ -3,8 +3,8 @@ module "transit_adoption_framework" {
   version = "v0.0.1"
 
   default_transit_accounts = {
-    azure = local.azure_account,
-    gcp   = local.gcp_account,
+    azure = var.azure_account,
+    gcp   = var.gcp_account,
   }
 
   default_firenet_firewall_image = {
@@ -88,19 +88,19 @@ module "spokes" {
   transit_gw = each.value.transit_gw
 }
 
-module "management_spoke" {
-  source  = "terraform-aviatrix-modules/mc-spoke/aviatrix"
-  version = "1.1.2"
+# module "management_spoke" {
+#   source  = "terraform-aviatrix-modules/mc-spoke/aviatrix"
+#   version = "1.1.2"
 
-  cloud      = "Azure"
-  name       = "Management-VNET"
-  region     = local.mgmt_region
-  account    = local.azure_account
-  transit_gw = module.transit_adoption_framework.transit["azure_transit_firenet"].transit_gateway.gw_name
+#   cloud      = "Azure"
+#   name       = "Management-VNET"
+#   region     = local.mgmt_region
+#   account    = local.azure_account
+#   transit_gw = module.transit_adoption_framework.transit["azure_transit_firenet"].transit_gateway.gw_name
 
-  use_existing_vpc = true
-  vpc_id           = local.vnet_id
-  gw_subnet        = local.gw_subnet
-  hagw_subnet      = local.ha_gw_subnet
-}
+#   use_existing_vpc = true
+#   vpc_id           = local.vnet_id
+#   gw_subnet        = local.gw_subnet
+#   hagw_subnet      = local.ha_gw_subnet
+# }
 
