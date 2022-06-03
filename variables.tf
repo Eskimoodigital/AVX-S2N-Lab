@@ -36,7 +36,7 @@ variable "gcp_account" {
     },
     gcp_spoke_1 = {
       cloud      = "GCP",
-      name       = "gcp-CNE-spoke-1",
+      name       = "gcp-cne-spoke-1",
       cidr       = "10.5.0.0/16",
       region     = var.gcp_region,
       account    = var.gcp_account,
@@ -52,7 +52,7 @@ variable "gcp_account" {
     },
     gcp_spoke_2 = {
       cloud      = "GCP",
-      name       = "gcp-CNE-spoke-2",
+      name       = "gcp-cne-spoke-2",
       cidr       = "10.6.0.0/16",
       region     = var.gcp_region,
       account    = var.gcp_account,
@@ -68,7 +68,7 @@ variable "gcp_account" {
     },
     gcp_spoke_3 = {
       cloud      = "GCP",
-      name       = "gcp-DCX-spoke-1",
+      name       = "gcp-dcx-spoke-1",
       cidr       = "10.6.0.0/16",
       region     = var.gcp_region,
       account    = var.gcp_account,
@@ -84,7 +84,7 @@ variable "gcp_account" {
     },
     gcp_spoke_4 = {
       cloud      = "GCP",
-      name       = "gcp-DCX-spoke-2",
+      name       = "gcp-dcx-spoke-2",
       cidr       = "10.7.0.0/16",
       region     = var.gcp_region,
       account    = var.gcp_account,
