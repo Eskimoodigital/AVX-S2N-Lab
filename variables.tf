@@ -17,6 +17,10 @@ variable "gcp_account" {
   default = "GCP_Paul"
 }
 
+variable "ctlpassword" {
+  type    = string
+}
+
  locals {
 #   azure_account = data.terraform_remote_state.management_deployment.outputs.account_name
 #   gcp_account   = data.terraform_remote_state.management_deployment.outputs.gcp_account_name
