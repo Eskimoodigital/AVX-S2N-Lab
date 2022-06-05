@@ -14,6 +14,7 @@ variable "azure_account" {
 }
 
 variable "gcp_account" {
+  type    = string
   default = "GCP_Paul"
 }
 
