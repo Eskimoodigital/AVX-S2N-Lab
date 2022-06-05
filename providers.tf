@@ -1,6 +1,6 @@
 provider "aviatrix" {
   controller_ip           = "18.198.44.55"
   username                = "admin"
-  password                = "xxxxxx"
+  password                = "Ccie16661!"
   skip_version_validation = false
 }
