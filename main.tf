@@ -61,6 +61,7 @@ module "transit_adoption_framework" {
       transit_region_name = var.gcp_region,
       transit_asn         = 64513,
       firenet_egress_cidr = "10.102.32.0/20",
+      firenet_mgmt_cidr = "10.102.48.0/20",
       firenet             = true
     #   firenet_user_data_1 = local.gcp_fw1 #This bootstrapping method does not work in the exact same way as in Azure/AWS. Need to look into it.
     #   firenet_user_data_2 = local.gcp_fw2 #This bootstrapping method does not work in the exact same way as in Azure/AWS. Need to look into it.
